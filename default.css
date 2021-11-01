@@ -1,3 +1,4 @@
+	@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700');
 	html, body
 	{
 		height: 100%;
@@ -14,7 +15,19 @@
 		color: #444444;
 	}
 	
-	
+	big
+	{
+		margin: 0;
+		padding: 0;
+		font-weight: 600;
+	}	
+	date
+	{
+		margin: 0;
+		padding: 0;
+		font-weight: 600;
+	}	
+
 	h1, h2, h3
 	{
 		margin: 0;
@@ -60,7 +73,52 @@
 	{
 		overflow: hidden;
 		margin: 0em auto;
-		width: 1200px;
+		width: 1400px;
+	}
+
+	.table {
+		width:100%;
+		border:1px solid $color-form-highlight;
+	}
+
+	table{
+	table-layout:auto;
+	width : 100%;
+	overflow: hidden;
+	}
+	table tr:nth-child(odd){
+ 	 background-color:#f89e2b;
+	}
+
+	table th
+	{
+		color:white;
+		background-color:#004389;
+	}
+
+	.table-header {
+		display:flex;
+		width:100%;
+		background:#000;
+		padding:($half-spacing-unit * 1.5) 0;
+	}
+
+	.table-row {
+		display:flex;
+		width:100%;
+		padding:($half-spacing-unit * 1.5) 0;
+		tr:nth-child(odd) {
+			background-color:red;
+		}
+	}
+
+	.table-data, .header__item {
+		flex: 1 1 20%;
+		text-align:center;
+	}
+
+	.header__item {
+		text-transform:uppercase;
 	}
 	
 /*********************************************************************************/
@@ -110,7 +168,7 @@
 	ul.style1
 	{
 		margin: 0 auto;
-		padding: 0;
+		padding: 10;
 		width: 80%;
 		overflow: hidden;
 		list-style: none;
@@ -120,9 +178,8 @@
 	
 	ul.style1 li
 	{
-		padding: 1.6em 0em 0em 0em;
-		margin: 0 0 2.5em 0;
-		border-top: 1px solid rgba(0,0,0,.1); 
+		padding: 1.5em 0em 0em 0em;
+		margin: 0 0 0em 0;
 	}
 	
 	ul.style1 li:first-child
@@ -132,7 +189,7 @@
 	
 	ul.style1 p
 	{
-		margin: 0;
+		margin: 10;
 	}
 	
 	ul.style1 a
@@ -149,7 +206,7 @@
 	
 	ul.style1 h3
 	{
-		padding: 1em 0em 5px 0em;
+		padding: 2em 1em 15px 10em;
 		text-transform: uppercase;
 		font-size: 1em;
 		font-weight: 400;
@@ -165,10 +222,10 @@
 	{
 		float: left;
 		position: relative;
-		width: 80px;
+		width: 100px;
 		height: 70px;
 		margin: 0.5em 1.5em 0em 0.5em;
-		padding: 1.5em 0em 1.5em 0em;
+		padding: 1.5em 1em 1.5em 0em;
 		box-shadow: 0px 0px 0px 5px rgba(255,255,255,0.1);
 		line-height: normal;
 		text-align: center;
@@ -186,8 +243,8 @@
 		position: absolute;
 		left: 0;
 		top: 0;
-		width: 100%;
-		height: 100%;
+		width: 10%;
+		height: 10%;
 		border-radius: 6px;
 	}
 	
@@ -362,19 +419,24 @@
 
 	.title
 	{
-		margin-bottom: 3em;
+		margin-bottom: 1em;
 	}
 	
 	.title h2
 	{
 		text-transform: lowercase;
-		font-size: 2.8em;
+		font-size: 2.0em;
 	}
 	
 	.title .byline
 	{
 		font-size: 1.3em;
 		color: #6F6F6F;
+	}
+	.title li
+	{
+	text-align: left;
+	margin-left: 70pt;
 	}
 		
 /*********************************************************************************/
@@ -385,7 +447,7 @@
 	{
 		position: relative;
 		float: left;
-		width: 300px;
+		width: 350px;
 		padding: 3em 0em;
 	}
 
@@ -401,6 +463,7 @@
 	
 	#logo h1
 	{
+		font-size: 30pt;
 		display: block;
 	}
 	
@@ -455,6 +518,7 @@
 		text-decoration:  none;
 		text-transform: uppercase;
 		font-weight: 700;
+		font-size: 14pt;
 		color: rgba(255,255,255,0.5);
 	}
 	
@@ -464,7 +528,7 @@
 	
 	#menu .current_page_item a
 	{
-		background: #2980b9;
+		background: #f99e2c;
 		color: rgba(255,255,255,1);
 	}
 	
@@ -478,7 +542,8 @@
 
 	#banner
 	{
-		margin-bottom: 4em;
+		margin-top: 2em;
+		margin-bottom: 2em;
 	}
 
 /*********************************************************************************/
@@ -487,7 +552,7 @@
 
 	#page
 	{
-		background: #2a2a2a;
+		background: #004389;
 	}
 
 /*********************************************************************************/
@@ -498,11 +563,12 @@
 	{
 		overflow: hidden;
 		float: right;
-		width: 800px;
+		width: 950px;
 		padding: 3em 50px 5em 50px;
 		background: #FFF;
 		border-top: 6px solid #2980b9;
 		text-align: center;
+		font-size: 14pt;
 	}
 
 /*********************************************************************************/
@@ -514,7 +580,6 @@
 		overflow: hidden;
 		margin-bottom: 3em;
 		padding-top: 5em;
-		border-top: 1px solid rgba(0,0,0,0.08);
 	}
 
 /*********************************************************************************/
@@ -617,11 +682,25 @@ strong{
 	margin-top : 20px;
 	text-align : justify;
 }
+
+big{
+	font-size : 50px;
+	color : #004389;
+	text-transform : uppercase;
+	margin-bottom : 1px;
+
+}
+date{
+	font-size : 30px;
+	color : #004389;
+	text-transform : uppercase;
+}
+
 h2{
 	font-size : 20px;
-	color : #007bcf;
+	color : #004389;
 	text-transform : uppercase;
-	border-bottom : 3px solid #007bcf;
+	border-bottom : 3px solid #004389;
 	margin-bottom : 10px;
 }
 .sec-left{
