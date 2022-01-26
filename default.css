@@ -21,6 +21,12 @@
 		padding: 0;
 		font-weight: 600;
 	}	
+	big2
+	{
+		margin: 0;
+		padding: 0;
+		font-weight: 400;
+	}	
 	date
 	{
 		margin: 0;
@@ -686,6 +692,13 @@ strong{
 big{
 	font-size : 50px;
 	color : #004389;
+	text-transform : uppercase;
+	margin-bottom : 1px;
+
+}
+big2{
+	font-size : 30px;
+	color : #00000F;
 	text-transform : uppercase;
 	margin-bottom : 1px;
 
